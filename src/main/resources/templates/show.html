@@ -6,7 +6,7 @@
 </head>
 <body>
 <a href="/">Show All tasks </a><br/>
-Task :<span th:text="${task.task}" ></span><br />
+Task :<span th:text="${task.tasko}" ></span><br />
 DueDate: <span th:text="${task.duedate}" ></span><br />
 Priority  :<span th:text="${task.priority}"></span><br />
 <a th:href="@{/delete/{id}(id=${task.id})}">Delete this task </a>

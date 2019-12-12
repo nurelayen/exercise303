@@ -13,9 +13,9 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @NotNull
+
     @Size(min=4)
-    private String task;
+    private String tasko;
 
     @NotNull
     @Size(min=3)
@@ -33,12 +33,12 @@ public class Task {
         this.id = id;
     }
 
-    public String getTask() {
-        return task;
+    public String getTasko() {
+        return tasko;
     }
 
-    public void setTask(String task) {
-        this.task = task;
+    public void setTasko(String tasko) {
+        this.tasko = tasko;
     }
 
     public String getDuedate() {

@@ -50,6 +50,7 @@ public class HomeController {
 
     @RequestMapping("/delete/{id}")
     public String delTask(@PathVariable("id") long id){
+        taskRepository.deleteById(id);
         return "redirect:/";
     }
 

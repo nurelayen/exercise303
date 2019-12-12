@@ -7,9 +7,9 @@
 <body>
 <form action="#" th:action="@{/process}" th:object="${task}" method="post">
     <input type="hidden" th:field="*{id}" />
-    Task: <input type="text" th:field="*{task}" />
-    <span th:if="${#fields.hasErrors('task')}"
-          th:errors="*{task}"></span><br />
+    Task: <input type="text" th:field="*{tasko}" />
+    <span th:if="${#fields.hasErrors('tasko')}"
+          th:errors="*{tasko}"></span><br />
     Due Date: <input type="text" th:field="*{duedate}" />
     <span th:if="${#fields.hasErrors('duedate')}"
           th:errors="*{duedate}"></span><br />

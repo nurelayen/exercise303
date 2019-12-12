@@ -12,10 +12,10 @@
         <th> Task </th>
         <th> DueDate </th>
         <th> priorities </th>
-        <td> Actions </td>
+
     </tr>
     <tr th:each="task : ${tasks}">
-        <td th:text="${task.task}"></td>
+        <td th:text="${task.tasko}"></td>
         <td th:text="${task.duedate}"></td>
         <td th:text="${task.priority}"></td>
     <td>
